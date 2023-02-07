@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+
+  function insertNumberToArray(arr, num, index) {
+    if (index < 0 || index > arr.length) {
+      return arr
+    }
+    else {
+      arr.splice(index, 0, num)
+      return arr
+    }
+  }
+  console.log(insertNumberToArray(arr, 0, 3))
+
+</script>
+</body>
+</html>
